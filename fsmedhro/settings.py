@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'exoral.apps.ExoralConfig',
     'fsmedhrocore.apps.FachschaftConfig',
+    'QuestionAir.apps.QuestionAirConfig',
 ]
 
 AUTHENTICATION_BACKENDS = [
