@@ -6,10 +6,21 @@ class FrageForm(ModelForm):
     class Meta:
         model = Frage
         fields = [
-        'Fach',
-        'Klausur',
         'datum',
         'Fragentext',
         'option1','option2','option3','option4','option5',
         'answerA','answerB', 'answerC', 'answerD', 'answerE',
-        'correctAnswer',]
+        'correctAnswer']
+
+class FrageeditForm(ModelForm):
+    class Meta:
+        model = Frage
+        fields = [
+        'Fach
+        'Klausur',
+        'datum',
+        'Fragentext',
+        'option1', 'option2', 'option3', 'option4', 'option5',
+        'answerA', 'answerB', 'answerC', 'answerD', 'answerE',
+        'correctAnswer', 'scoreA', 'scoreB', 'scoreC', 'scoreD', 'scoreE'
+        ]

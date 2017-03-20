@@ -76,11 +76,11 @@ class Frage(models.Model):
 
     # TODO: Score up AnswerA-E wenn beantworten geklickt
 
-    def score_upa(self, user):
+    def score_upa(self,):
         self.scoreA = models.F('scoreA') + 1
         self.save()
 
-    def score_upb(self, user):
+    def score_upb(self,):
         self.scoreB = models.F('scoreB') + 1
         self.save()
 
@@ -90,7 +90,7 @@ class Frage(models.Model):
 
 class Kommentar(BasicHistory):
     text = models.TextField()
-    visible = models.BooleanField(default=False)
+    visible = models.BooleanField(default=False, verbose_name="Sichtbarkeit")
     frage = models.ForeignKey(Frage)
 
     def __str__(self):
