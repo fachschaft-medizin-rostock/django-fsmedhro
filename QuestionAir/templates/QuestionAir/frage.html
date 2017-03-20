@@ -11,17 +11,19 @@
 
 {% block site_content %}
     <div class="navigation">
-        <button>Zürck</button>
-        <button>Beantworten</button>
-        <button>Beenden</button>
-        <button>Weiter</button>
+        <button>Zürck</button> //TODO: show last question
+        <button>Beantworten</button> // TODO: Score-up für ausgewählte Antwort
+        <button>Beenden</button> //TODO: weiter zur Auswertungsseite
+        <button>Weiter</button> //TODO: show next question
     </div>
     <section>
         <div class="question">
             Hier kann die Frage stehen
+            {{ Fragentext }}
         </div>
         <div class="answer">
             Hier steht die Antwort A
+            {{ answerA }}
         </div>
     </section>
     <div class="navigation">
@@ -31,5 +33,6 @@
         <button>Weiter</button>
     </div>
 
-    #TODO: wenn der Button Beantworten gedrück, dann hier Lösungsteil
+    //TODO: wenn der Button Beantworten gedrück, dann hier Lösungsteil
+     <!-- as diagramm, show scores of answersA-E-->
 {% endblock %}

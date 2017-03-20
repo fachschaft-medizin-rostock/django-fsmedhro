@@ -4,7 +4,6 @@ from .models import *
 
 class KlausurAdmin(admin.ModelAdmin):
     model = Klausur
-    filter_horizontal = ('Fach',)
 
 
 # Register your models here.
