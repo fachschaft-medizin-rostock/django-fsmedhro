@@ -1,0 +1,39 @@
+{% extends "QuestionAir/base.html" %}
+
+{% block site_heading %}
+    Kreuzmodus
+{% endblock %}
+
+
+{% block beschreibung %}
+    Du kreuz momentan die Klausur {{ klausur }} aus dem Fach {{ fach }}
+{% endblock %}
+
+{% block site_content %}
+    <div class="navigation">
+        <button>Zürck</button> //TODO: show last question
+        <button>Beantworten</button> // TODO: Score-up für ausgewählte Antwort
+        <button>Beenden</button> //TODO: weiter zur Auswertungsseite
+        <button>Weiter</button> //TODO: show next question
+    </div>
+    <section>
+        <div class="question">
+            Hier kann die Frage stehen
+            {{ Fragentext }}
+        </div>
+        <div class="answer">
+            Hier steht die Antwort A
+            {{ answerA }}
+        </div>
+    <!--IF User is admin then show button for editing the question-->
+    </section>
+    <div class="navigation">
+        <button>Zürck</button>
+        <button>Beantworten</button>
+        <button>Beenden</button>
+        <button>Weiter</button>
+    </div>
+
+    //TODO: wenn der Button Beantworten gedrück, dann hier Lösungsteil
+     <!-- as diagramm, show scores of answersA-E-->
+{% endblock %}

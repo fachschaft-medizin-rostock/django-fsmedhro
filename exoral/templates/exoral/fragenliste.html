@@ -1,12 +1,41 @@
-{% extends "base.html" %}
+{% extends "exoral/base.html" %}
 
-{% block title %}exoral-Fragen{% endblock %}
+{% block site_heading %}Altfragen{% endblock %}
 
-
-{% block heading %}
-  <h2>Fragen</h2>
+{% block beschreibung %}
+    Wir haben für die Kombination Testat: <b>{{ testat }}</b>, Prüfer: <b>{{ pruefer }}</b> <b>{{ fragen.count }}</b> Fragen gefunden
 {% endblock %}
 
 {% block content %}
-...ToDo...
+
+    <h2>Fragen</h2>
+        {% for frage in fragen %}
+            <div class="frage animated bounceInLeft">
+                <div class="date">{{ frage.datum }}</div>
+                <div class="score">Score: {{ frage.score }}</div>
+                <div class="text"><u>Frage:</u> <p>{{ frage.text }}</p></div>
+                {% if frage.antwort %}
+                    <div class="text"><u>Antwort:</u> <p>{{ frage.antwort }}</p></div>
+                {% endif %}
+                {% if modus == 'p' %}
+                    <form action="{% url 'exoral:frage_score' frage.pk %}" method="post" class="up">
+                        {% csrf_token %}
+                        <input type="hidden" name="testat_id" value="{{ testat.pk }}" />
+                        <input type="hidden" name="pruefer_id" value="{{ pruefer.pk }}" />
+                        <button type="submit"><span class="fa fa-long-arrow-up"></span> up</button>
+                    </form>
+                {% endif %}
+            </div>
+        {% endfor %}
+    <h2>Kommentare</h2>
+        {% for kommentar in kommentare %}
+            <div class="comment animated zoomInUp">{{ kommentar.text }}</div>
+        {% endfor %}
+
+    {% if modus == 'p' %}
+        <button class="big"><a href="{% url 'exoral:frage_neu' modus=modus testat_id=testat.pk pruefer_id=pruefer.pk %}"
+        style="text-decoration: none; color: #E0E0F8">
+            neue Frage eintragen</a></button>
+    {% endif %}
+
 {% endblock %}
