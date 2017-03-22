@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from .models import Klausur, Fach, Frage, Kommentar
 from fsmedhrocore.views import user_edit
 from django.contrib import messages
-from .forms import FrageForm
+from .forms import FrageForm, FrageeditForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 

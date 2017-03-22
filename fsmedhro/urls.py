@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^logout/$', logout, {'template_name': 'logout.html'}, name='fsmedhro_logout'),
     url(r'^fachschaft/',include('fsmedhrocore.urls')),
     url(r'^exoral/',include('exoral.urls')),
+    #TODO: url(r'questionair/', include('QuestionAir.urls')),
 ]
