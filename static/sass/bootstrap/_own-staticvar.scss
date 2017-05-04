@@ -1,0 +1,16 @@
+@import "variables";
+// Basic Color
+$primcolor: $brand-primary;
+$seccolor: $body-bg;
+$tertcolor: $brand-danger;
+$grew_l: #DADADA;
+$grew_d: #BBB;
+
+@mixin border-radius ($color) {
+  border-radius: 1px dotted $color;
+}
+
+@mixin border_round($value, $color) {
+  border: 1px dotted $color;
+  border-radius: $value;
+}

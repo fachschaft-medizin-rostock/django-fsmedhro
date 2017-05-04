@@ -1,0 +1,109 @@
+html{
+  background-color: $brand-primary;
+  height: 100%;
+  font-family: sans-serif, Georgia, Serif;
+  font-size: 14px;
+  float: none;
+}
+body{
+  padding: 200px 0 0 0;
+  margin: 0;
+}
+.btn_login{
+  background-color: $tertcolor;
+  font-size: 22px;
+  padding: 5px 15px;
+}
+.nkz{
+  font-size: 16px;
+  padding: 5px;
+  background-color: $brand-primary;
+  color: $seccolor;
+}
+.psw{
+  font-size: 14px;
+  padding: 5px;
+  background-color: $brand-primary;
+  color: $seccolor;
+}
+
+h1{
+	font-size: 45px;
+	text-decoration: underline;
+	text-align: center;
+}
+h2{
+	font-size: 30px;
+}
+h3{
+
+	padding-left: 25px;
+	font-style: italic;
+}
+@media only screen and (min-width:1200px){
+	article{
+		padding: 0 20% 30px 20%;
+        margin-bottom: 100px;
+        justify-content: center;
+	}
+}
+@media only screen and (max-width:1200px) and (min-width:430px){
+	article{
+		padding: 0 10% 30px 10%;
+        margin-bottom: 100px;
+        justify-content: center;
+	}
+}
+@media only screen and (max-width:600px){
+	article{
+		padding: 0 5px 30px 5px;
+        margin-bottom: 100px;
+        justify-content: center;
+	}
+}
+section{
+	text-align: left;
+	font-size: 16px;
+	border: 1px dotted black;
+	padding: 15px;
+	margin: 15px 0;
+}
+
+button{
+	background-color: brown;
+	color: antiquewhite;
+	padding: 10px;
+	margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.big{
+	padding: 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.small{
+	padding: 5px;
+	font-style: italic;
+}
+main{
+      color: #1f2942;
+      margin: 0 25px 0;
+  }
+@media only screen and (min-width: 768px) {
+  main{
+    margin: 0 20% 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main{
+    margin: -145px 5px 0;
+  }
+}
+
+table{
+	font-size: 20px;
+}
+table td{
+	padding: 10px;
+}

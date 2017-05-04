@@ -1,0 +1,160 @@
+.forms{
+  @include border-radius(15px);
+  border: 1px dotted $tertcolor;
+  padding: 5px;
+}
+  .title{
+    font-size: 22px;
+    text-align: center;
+  }
+  .description{
+    margin: 5px 15px 15px;
+   @include border-round(5px, $tertcolor);
+    padding: 5px 15px;
+  }
+  .form-wrapper{
+    margin: 5px 0 0 40px;
+  }
+  .integerfield{
+    width: 35px;
+    text-align: center;
+  }
+  .help-text{
+    font-style: italic;
+    font-size: $font-size-small;
+  }
+  label{
+    vertical-align: top;
+    font-weight: bold;
+  }
+    span{
+      text-decoration: none;
+      font-weight: normal;
+      vertical-align: top;
+    }
+  field-wrapper{}
+
+    input{
+      margin: 0 0 0 5px;
+      padding: 0 0 0 2px;
+    }
+    textarea{
+      padding: 5px 5px 0;
+      font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+      margin: 0 0 0 5px;
+    }
+  forms{}
+
+    select{
+      padding: 2px 5px;
+      font-size: 18px;
+    }
+      option{
+        background-color: $primcolor;
+        color: $seccolor;
+        margin: 2px 0;
+      }
+  ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+    .radioselect{
+      margin: 2px 0;
+      font-weight: normal;
+    }
+  .button-wrapper{
+    justify-content: center;
+  }
+tbody tr{
+  border: 1px dotted $primcolor;
+}
+  :hover{
+    background-color: $grew_l;
+  }
+  td:hover{
+    background-color: $grew_d;
+  }
+  :first-child td{}
+
+    :first-child{
+      border-radius: 15px 0 0 0;
+    }
+    :last-child{
+      border-radius: 0 15px 0 0;
+    }
+  :last-child td{}
+
+    :first-child{
+      border-radius: 0 0 0 15px;
+    }
+    :last-child{
+      border-radius: 0 0 15px 0;
+    }
+p{
+  padding: 0 15px 0;
+}
+.filer_image{
+  border-radius: 10px;
+}
+.filer_image_info{
+  visibility: hidden;
+}
+.sidebar{
+  width: 30%;
+  float: left;
+}
+
+//Blog
+.app.app-blog{
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: $primcolor;
+}
+.blog-list{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.post-item{
+    margin: 5px 0 15px;
+    padding: 15px;
+    border: 1px dotted $primcolor;
+    border-radius: 0 0 5px 25px;
+}
+  header h3{
+    text-align: center;
+    font-size: 35px;
+  }
+    a{
+    color: inherit;
+    text-decoration: underline;
+  }
+.post-detail header li, .post-item header .post-detail li{
+    list-style: none;
+    text-align: right;
+}
+.tags{
+    float: right;
+    display: inline-flex;
+}
+.blog-visual{
+    margin: -150px 0 0;
+}
+.blog-lead{
+    margin: 0;
+    padding: 0;
+}
+.read-more{
+    width: auto;
+    margin: 0 0 15px 0;
+    padding: 5px;
+}
+.read-more a{
+    float: right;
+    text-align: right;
+    border: 3px dotted $primcolor;
+    border-radius: 15px;
+    padding: 3px;
+}
