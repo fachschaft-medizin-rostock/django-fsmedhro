@@ -9,9 +9,10 @@ Bitte wähle deinen Modus. Wenn du nur lernen und dir die Fragen anschauen möch
 
 {% block content %}
     {% block fortschritt %}{% endblock %}
-    <a href="{% url 'exoral:testatwahl' 'l'%}"><button class="big_m animated fadeInLeft">Lernen</button></a>
-    <a href="{% url 'exoral:testatwahl' 'p'%}"><button class="big_m animated fadeInRight">Protokollieren</button></a>
-
+    <div class="btn-group btn-group-justified">
+        <a href="{% url 'exoral:testatwahl' 'l'%}"><button class="btn-danger btn-lg animated fadeInLeft">Lernen</button></a>
+        <a href="{% url 'exoral:testatwahl' 'p'%}"><button class="btn-danger btn-lg animated fadeInRight">Protokollieren</button></a>
+    </div>
     <br><br>
     <section>
       <h2>Informationen</h2>
@@ -32,7 +33,7 @@ Bitte wähle deinen Modus. Wenn du nur lernen und dir die Fragen anschauen möch
       </ol>
       <h3>Nach dem Testat</h3>
       Bitte trage nach dem Testat deine Frage in unser System ein.
-        <u>Dazu gibt es zwei Möglichkeiten:<u>
+        <u>Dazu gibt es zwei Möglichkeiten:</u>
           <ol>
            	<li><strong>Deine Frage war eine Altfrage?</strong>
               <ol>
