@@ -163,7 +163,7 @@
 .navbar-brand {
   float: left;
   padding: $navbar-padding-vertical $navbar-padding-horizontal;
-  font-size: $font-size-h1;
+  font-size: $font-size-large * 0.8;
   line-height: $line-height-computed;
   height: $navbar-height;
 
@@ -180,6 +180,7 @@
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -$navbar-padding-horizontal;
+      font-size: $font-size-h1;
     }
   }
 }
@@ -188,7 +189,7 @@
   padding: 5px;
   font-size: $font-size-h1;
   line-height: $line-height-computed;
-  height: $navbar-height;
+  height: $navbar-height * 0.6;
 
   &:hover,
   &:focus {
@@ -203,6 +204,7 @@
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -$navbar-padding-horizontal;
+      height: $navbar-height;
     }
   }
 }
