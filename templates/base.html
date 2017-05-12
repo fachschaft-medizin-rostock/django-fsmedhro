@@ -16,15 +16,15 @@
     <link rel="icon" href="{% block logo_bar %}{% static 'images/Signet.svg' %}{% endblock %}" type="image/png" >
     <link rel="stylesheet" href="{% static 'sass/design.css' %}" type="text/css" media="all">
     <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'design/hamburger.css' %}">
 
     {% render_block "css"%}
     {{ ALDRYN_SNAKE.render_head }}
 
     {% addtoblock "js" %}
-        <script src="{% static 'hamburger.js' %}"></script>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="{% static 'design/bootstrap3/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'design/hamburger.js' %}"></script>
     {% endaddtoblock %}
 
 
@@ -41,11 +41,10 @@
 {% cms_toolbar %}
 <nav class="navbar navbar-default navbar-fixed-top noprint">
    <div class="container-fluid">
-       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+       <button type="button" class="hamburger hamburger--spring navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Menü">
+           <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+           </span>
         </button>
        <div class="navbar-header">
        {% block header %}
@@ -56,7 +55,7 @@
        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
            {% block nav %}
                <ul class="nav navbar-nav">
-                    <p class="navbar-text navbar-right">{% block subtitle %}FSR{% endblock %}</p>
+                    <p class="navbar-text navbar-right">{% block subtitle %}{% endblock %}</p>
                     {% if request.user.is_authenticated %}
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="{% url 'fsmedhro_user' %}">

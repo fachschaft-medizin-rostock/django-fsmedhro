@@ -1,5 +1,15 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "own-staticvar";
+
+
+//nav
+
+
+
+//Forms
 .forms{
-  @include border-radius(15px);
+  border-radius: 15px;
   border: 1px dotted $tertcolor;
   padding: 5px;
 }
@@ -9,7 +19,8 @@
   }
   .description{
     margin: 5px 15px 15px;
-   @include border-round(5px, $tertcolor);
+    border: 1px dotted $tertcolor;
+    border-radius: 5px;
     padding: 5px 15px;
   }
   .form-wrapper{
@@ -32,7 +43,9 @@
       font-weight: normal;
       vertical-align: top;
     }
-  field-wrapper{}
+  .field-wrapper{
+
+  }
 
     input{
       margin: 0 0 0 5px;
@@ -43,7 +56,7 @@
       font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
       margin: 0 0 0 5px;
     }
-  forms{}
+  .forms{}
 
     select{
       padding: 2px 5px;
@@ -66,6 +79,8 @@
   .button-wrapper{
     justify-content: center;
   }
+
+//Table
 tbody tr{
   border: 1px dotted $primcolor;
 }
