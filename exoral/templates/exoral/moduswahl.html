@@ -9,10 +9,13 @@ Bitte wähle deinen Modus. Wenn du nur lernen und dir die Fragen anschauen möch
 
 {% block content %}
     {% block fortschritt %}{% endblock %}
-    <div class="btn-group btn-group-justified">
-        <a href="{% url 'exoral:testatwahl' 'l'%}"><button class="btn-danger btn-lg animated fadeInLeft">Lernen</button></a>
-        <a href="{% url 'exoral:testatwahl' 'p'%}"><button class="btn-danger btn-lg animated fadeInRight">Protokollieren</button></a>
-    </div>
+    <a href="{% url 'exoral:testatwahl' 'l'%}">
+        <button class="btn-moduswahl">Lernen</button>
+    </a>
+    <a href="{% url 'exoral:testatwahl' 'p'%}">
+        <button class="btn-moduswahl">Protokollieren</button>
+    </a>
+
     <br><br>
     <section>
       <h2>Informationen</h2>

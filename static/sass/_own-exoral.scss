@@ -1,7 +1,33 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+//Moduswahl
+
+.btn-moduswahl{
+  width: 50%;
+  float: left;
+  background-color: $brand-danger;
+  color: $body-bg;
+  height:50px;
+}
+.btn-exoral{
+  width: 25%;
+  float: left;
+  background-color: $brand-primary;
+  color: $body-bg;
+  height: 30px;
+}
+@media (max-width: $grid-float-breakpoint) {
+.btn-moduswahl{
+  width: 100%;
+}
+.btn-exoral{
+  width: 100%;
+}
+}
 
 //Fragebox - questionblog
 .frage{
-  @include border-radius($brand-primary);
   border-radius: 0 25px 25px 25px;
   margin: 15px;
   padding: 10px;
@@ -23,10 +49,12 @@
   	margin-top: -25px;
   	display: block;
   }
-    button{
+    button.small{
       margin: 0;
   	  padding: 3px;
   	  font-size: 14px;
+      background-color: $brand-danger;
+      border-radius: 0 0 15px 0;
     }
   .text{
     display: flex;
@@ -42,11 +70,11 @@
   	display: block;
   	font-style: italic;
   }
+
 .kommentare{
   background-color: $brand-primary;
 	color: $body-bg;
 	font-size: $font-size-base;
-  @include border-radius($brand-danger);
   border-radius: 0 20px 20px 20px;
 	padding: 5px 25px;
 }
@@ -54,13 +82,44 @@
   background-color: $brand-primary;
 	color: $body-bg;
 	font-size: $font-size-base;
-  @include border-radius($brand-danger);
   border-radius: 0 20px 20px 20px;
 	padding: 5px 25px;
 	margin: 15px 15px;
 	width: 40%;
 	float: left;
 }
+.input-exoral{
+  border: 1px dotted $brand-primary;
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px;
+  margin:15px;
+  justify-content: center;
+}
+  tr{
+    margin: 15px 5px 0;
+  }
+    th,
+    td{
+      margin: 5px 0 0;
+    }
+  select{
+    color: $brand-primary;
+    background-color: $body-bg;
+    border-radius: 15px;
+    padding: 5px;
+  }
+    option{
+      background-color: $brand-primary;
+      color: $body-bg;
+      border-radius: 15px;
+      padding: 5px;
+    }
+  select:focus{
+    background-color: $brand-primary;
+    color: $body-bg;
+  }
+/*
 .button .input{
   background-color: inherit;
 }
@@ -100,3 +159,4 @@
   		width: 45%;
   	}
   }
+*/

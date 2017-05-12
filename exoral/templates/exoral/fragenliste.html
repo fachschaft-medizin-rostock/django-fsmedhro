@@ -4,7 +4,7 @@
 
 {% block beschreibung %}
     Wir haben für das Testat: <b>{{ testat }}</b> bei <b>{{ pruefer }}</b> <b>{{ fragen.count }}</b> Fragen gefunden
-    Du kannst die Liste auch <a href="javascript:window.print()"><button>Drucken</button></a>
+    Du kannst die Liste auch <a href="javascript:window.print()"><button class="small">Drucken</button></a>
 {% endblock%} //PDF function
 
 {% block content %}
@@ -32,7 +32,7 @@
         {% endfor %}
     {% if modus == 'p' %}
         <a href="{% url 'exoral:frage_neu' modus=modus testat_id=testat.pk pruefer_id=pruefer.pk %}">
-        <button class="big">Neue Frage eintragen</button></a>
+        <button class="btn-lg btn-danger">Neue Frage eintragen</button></a>
     {% endif %}
     <h2 class="noprint"><i class="fa fa-comments" aria-hidden="true"></i> Kommentare</h2>
         <section class="noprint">

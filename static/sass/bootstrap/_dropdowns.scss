@@ -35,7 +35,7 @@
   z-index: $zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
   float: left;
-  min-width: 160px;
+  min-width: 150px;
   padding: 5px 0;
   margin: 2px 0 0; // override default ul
   list-style: none;
@@ -44,8 +44,8 @@
   background-color: $dropdown-bg;
   border: 1px solid $dropdown-fallback-border; // IE8 fallback
   border: 1px solid $dropdown-border;
-  border-radius: $border-radius-base;
-  @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+  border-radius: $border-radius-menu;
+  @include box-shadow(0 6px 12px rgba(0,0,0,.100));
   background-clip: padding-box;
 
   // Aligns the dropdown menu to right

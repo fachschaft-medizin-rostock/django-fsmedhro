@@ -14,13 +14,13 @@
 
 <form method="post" action="">
     {% csrf_token %}
-    <table>
+    <table class="input-exoral">
     {{ f_form.as_table }}
     </table>
-    <button class="big">neue Frage hinzufügen</button>
+    <button class="btn-lg btn-danger">neue Frage hinzufügen</button>
 </form>
     <a href="{% url 'exoral:fragenliste' modus=modus testat_id=testat.pk pruefer_id=pruefer.pk %}">
-    <button class="small animated bounceInRight">
+    <button class="btn-xs btn-success animated bounceInRight">
         Abbrechen
     </button></a>
     <br><br>
