@@ -143,8 +143,8 @@ CMS_TEMPLATES = [
     ('home.html', 'Standart'),
     ('sidebar_left.html', 'Sidebar Links'),
     ('sidebar_right.html', 'Sidebar Rechts'),
-    ('sidebar_left_small', 'Sidebar Links(klein)'),
-    ('sidebar_right_small', 'Sidebar Rechts(klein)'),
+    ('sidebar_left_small.html', 'Sidebar Links klein'),
+    ['sidebar_right_small.html', 'Sidebar Rechts klein'],
 ]
 
 STATICFILES_DIRS = [
