@@ -41,7 +41,7 @@ django-meta-mixin==0.3.0
 django-model-utils==2.0.3
 django-mptt==0.8.7
 django-nyt==1.0b3
-django-orderedmodel==2014.12.1
+git+https://github.com/MagicSolutions/django-orderedmodel.git
 django-parler==1.7
 django-phonenumber-field==1.2.0
 django-polymorphic==1.0.2
