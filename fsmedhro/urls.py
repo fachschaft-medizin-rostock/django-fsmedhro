@@ -34,7 +34,8 @@ urlpatterns = [
     url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
     url(r'^cms-forms/', include('djangocms_forms.urls')),
     url(r'^data/', include('filer.urls')),
+    url(r'^froala_editor/', include('froala_editor.urls')),
     url(r'^notifications/', get_nyt_pattern()),
-    url(r'^pharos/', get_wiki_pattern()),
+    url(r'^pharose/', get_wiki_pattern()),
     url(r'^', include('cms.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

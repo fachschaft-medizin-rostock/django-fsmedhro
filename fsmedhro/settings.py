@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.humanize',
     'django_nyt',
+    'froala_editor',
     'cms',
     'mptt',
     'menus',
@@ -107,7 +108,7 @@ REST_FRAMEWORK = {
     )
 }
 
-LOGIN_URL = 'http://127.0.0.1:8000/login/'
+LOGIN_URL = 'http://fachschaft.med.uni-rostock.de/login/'
 #TODO: change to http://fachschaft.med.uni-rostock.de/login before uploading
 
 
@@ -259,7 +260,7 @@ WIKI_ACCOUNT_SIGNUP_ALLOWED = True
 #lock account settings in the wiki
 
 #TODO include CKEditor as texteditor
-# WIKI_EDITOR = u'static/ckeditor/ckeditor'
+WIKI_EDITOR = u'wiki.editors.markitup.MarkItUp'
 
 WIKI_ANONYMOUS_CREATE = False
 WIKI_ANONYMOUS_UPLOAD = False
@@ -278,3 +279,13 @@ WIKI_MARKDOWN_KWARGS = {
         'codehilite',
     ]
 }
+
+
+#Froala (editor for WIKI)
+FROALA_EDITOR_THEME= 'gray'
+FROALA_EDITOR_OPTIONS = 'toolbarInline'
+FROALA_EDITOR_PLUGINS = ('align', 'char_counter', 'code_beautifier' ,'code_view', 'colors', 'draggable', 'emoticons',
+        'entities', 'file', 'font_family', 'font_size', 'fullscreen', 'image_manager', 'image', 'inline_style',
+        'line_breaker', 'link', 'lists', 'paragraph_format', 'paragraph_style', 'quick_insert', 'quote', 'save', 'table',
+        'url', 'video')
+FROALA_INCLUDE_JQUERY = True
