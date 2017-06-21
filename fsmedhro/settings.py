@@ -107,7 +107,10 @@ REST_FRAMEWORK = {
     )
 }
 
-LOGIN_URL = 'fsmedhro_login'
+LOGIN_URL = 'http://127.0.0.1:8000/login/'
+#TODO: change to http://fachschaft.med.uni-rostock.de/login before uploading
+
+
 LOGOUT_URL = 'fsmedhro_logout'
 LOGIN_REDIRECT_URL = 'fsmedhro_user'
 
@@ -252,7 +255,7 @@ WIKI_CHECK_SLUG_URL_AVAILABLE = False
 WIKI_ANONYMOUS = False
 #treats not logged in users not as other users
 WIKI_ACCOUNT_HANDLING = False
-WIKI_ACCOUNT_SIGNUP_ALLOWED = False
+WIKI_ACCOUNT_SIGNUP_ALLOWED = True
 #lock account settings in the wiki
 
 #TODO include CKEditor as texteditor
