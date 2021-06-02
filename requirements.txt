@@ -83,7 +83,7 @@ html5lib==0.9999999
 jsonfield==2.0.1
 lxml==3.7.3
 Markdown==2.6.8
-markdown2==2.3.4
+markdown2==2.4.0
 Misago==0.6a11
 olefile==0.44
 packaging==16.8
