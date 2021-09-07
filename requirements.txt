@@ -90,7 +90,7 @@ packaging==16.8
 path.py==9.1
 phonenumbers==8.3.3
 phonenumberslite==8.3.3
-Pillow==6.2.0
+Pillow==8.3.2
 pluggy==0.4.0
 psycopg2==2.6.2
 py==1.4.33
