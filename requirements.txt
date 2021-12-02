@@ -112,5 +112,5 @@ Unidecode==0.4.20
 urllib3==1.24.2
 URLObject==2.4.2
 virtualenv==15.1.0
-wiki==0.2.4
+wiki==0.7.9
 YURL==0.13
