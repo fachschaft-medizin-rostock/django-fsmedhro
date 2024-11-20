@@ -61,7 +61,7 @@ django-treebeard==4.1.0
 django-widget-tweaks==1.4.1
 djangocms-admin-style==1.2.6.2
 djangocms-apphook-setup==0.1.2
-djangocms-attributes-field==0.2.0
+djangocms-attributes-field==4.0.0
 djangocms-blog==0.8.12
 djangocms-column==1.7.0
 djangocms-file==2.0.2
